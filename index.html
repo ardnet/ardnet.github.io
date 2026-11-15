@@ -1,8 +1,136 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-Hi...
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pratomo Ardianto — Technical Lead · Full-Stack · Cloud DevOps</title>
+  <meta name="description" content="Pratomo Ardianto — Technical Development Lead, full-stack engineer and cloud DevOps specialist based in Singapore. Projects, experience and skills.">
+  <link rel="canonical" href="https://ardi.squarish.com.sg/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pratomo Ardianto — ~/ardi">
+  <meta property="og:description" content="Technical Development Lead · Full-Stack Engineer · Cloud DevOps. 10+ years shipping web platforms.">
+  <meta property="og:url" content="https://ardi.squarish.com.sg/">
+  <meta name="theme-color" content="#0E1116">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-Hi.....
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo mono">~/ardi<span class="cursor" aria-hidden="true">_</span></a>
+      <button class="nav-toggle mono" aria-expanded="false" aria-controls="site-nav">menu</button>
+      <nav id="site-nav" class="site-nav mono" aria-label="Main">
+        <a href="#projects">./projects</a>
+        <a href="#experience">./experience</a>
+        <a href="#skills">./skills</a>
+        <a href="#contact">./contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero container">
+      <p class="prompt mono"><span class="ps1">ardi@sg:~$</span> <span id="typed" data-text="whoami">whoami</span></p>
+      <h1 class="mono">Pratomo Ardianto</h1>
+      <p class="lead">Technical Development Lead · Full-Stack Engineer · Cloud DevOps. 10+ years shipping web platforms, APIs and CI/CD pipelines. Based in Singapore.</p>
+      <div class="actions">
+        <a class="btn btn-primary mono" href="#projects">view projects →</a>
+        <a class="btn mono" href="https://linkedin.com/in/pratomoardianto" target="_blank" rel="noopener">linkedin</a>
+        <a class="btn mono" href="https://github.com/ardnet" target="_blank" rel="noopener">github</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title mono">$ ls projects/</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="meta mono">web app · side project</p>
+          <h3>Self-Operated Tennis Score</h3>
+          <p>A scoring app players run themselves from courtside, with a live scoreboard. <!-- TODO: refine summary --></p>
+          <p class="meta mono">Static site · Supabase Edge Functions · Render</p>
+          <a class="mono link" href="https://github.com/ardnet/self_op_tennis_score_app" target="_blank" rel="noopener">source ↗</a>
+        </article>
+
+        <article class="card">
+          <p class="meta mono">portal · SQUARISH</p>
+          <h3>Partners Portal</h3>
+          <p>A directory of recommended contractors and suppliers for SQUARISH clients.</p>
+          <p class="meta mono"><!-- TODO: stack -->[STACK]</p>
+          <a class="mono link" href="https://partners.squarish.com.sg" target="_blank" rel="noopener">partners.squarish.com.sg ↗</a>
+        </article>
+
+        <article class="card">
+          <p class="meta mono">enterprise · Amdocs</p>
+          <h3>Singtel Portals</h3>
+          <p>Brought average API latency from ~70% to ~30% of the SLA threshold (Dynatrace).</p>
+          <p class="meta mono">Java · Angular · CI/CD</p>
+          <a class="mono link" href="#experience">see experience →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title mono">$ git log --career</h2>
+      <ol class="log mono">
+        <li>
+          <span class="when">2025 — 2026</span>
+          <div class="what">
+            <strong>Co-Founder, Technology &amp; Operations</strong> <span class="at">@ SQUARISH</span>
+            <p>Operations and digital transformation: company website, partners portal, digital marketing team.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2020 — 2025</span>
+          <div class="what">
+            <strong>Software Engineering Specialist</strong> <span class="at">@ Amdocs</span>
+            <p>Singtel customer portals, API performance, release pipelines.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2017 — 2018</span>
+          <div class="what">
+            <strong>Lead Web Engineer</strong> <span class="at">@ Woodpecker Asia Tech</span>
+          </div>
+        </li>
+        <li class="muted">
+          <span class="when">earlier</span>
+          <div class="what"><!-- TODO: earlier roles, one line -->[EARLIER ROLES]</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title mono">$ cat skills.yaml</h2>
+<pre class="code mono"><span class="k">backend:</span>   [PHP, Java]
+<span class="k">frontend:</span>  [Angular, Next.js]
+<span class="k">cloud:</span>     [AWS]
+<span class="k">devops:</span>    [Jenkins, GitLab CI, Docker]
+<span class="k">education:</span>
+  - Diploma in Infocomm Technology – Data Science &amp; AI, Lithan Academy (2025)
+  - Bachelor of Informatics Engineering, Trisakti University</pre>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer container mono">
+    <span>$ echo "open to new roles" <span class="ok">✓</span></span>
+    <span class="footer-links">
+      <a href="https://linkedin.com/in/pratomoardianto" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/ardnet" target="_blank" rel="noopener">github</a>
+    </span>
+    <span>© <span id="year">2026</span> ardi.squarish.com.sg</span>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
